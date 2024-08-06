@@ -610,27 +610,28 @@ ul.breadcrumb-nav li a:hover {
     display: block;
 }
 
-a.footer__content{
+a.footer__content {
     transition: 0.3s all;
 }
+
 a.footer__content::before {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    content:"";
+    content: "";
     width: 8px;
     height: 8px;
     background: url('../images/footer/icon.png') center center no-repeat;
-    background-size: contain    ;
+    background-size: contain;
     margin-right: 10px;
     margin-bottom: 2px;
 }
 
-.footer__block:last-child a.footer__content::before{
+.footer__block:last-child a.footer__content::before {
     display: none !important;
 }
 
-a.footer__content:hover{
+a.footer__content:hover {
     color: white;
 }
 
@@ -658,7 +659,8 @@ a.footer__content:hover{
     width: 100%;
     height: 100vh;
     background: url(../images/1-home/banner.jpg) center center no-repeat;
-    background-repeat: no-repeat;background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     /* height: auto; */
     /* aspect-ratio: auto; */
 }
@@ -779,7 +781,7 @@ a.footer__content:hover{
     opacity: 0.8;
     transform: translateY(-20px);
     cursor: pointer;
-    transition: 0.3s all;   
+    transition: 0.3s all;
 }
 
 .reg-features__box.reg-features__box--even {
@@ -891,7 +893,7 @@ a.footer__content:hover{
     margin-top: 7px;
 }
 
-.reg-benefits_wrap{
+.reg-benefits_wrap {
     width: calc(100% - 100px);
     margin: 0 auto;
 }
@@ -1168,9 +1170,11 @@ a.footer__content:hover{
 .about-misson__image img {
     aspect-ratio: auto;
     width: 100%;
-    height: auto;
+    height: 100%;
     position: relative;
     top: 0;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 .about-misson__box {
@@ -1447,9 +1451,9 @@ a.contact-offline__detail {
     background-attachment: fixed;
     background-position: center;
     border-radius: 0 0 80px 80px;
-    background-size: 100% auto;
+    /* background-size: 100% auto; */
     z-index: -1;
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 .reg-banner__box {
@@ -1742,23 +1746,15 @@ div.customer-steps__box {
     aspect-ratio: auto;
     position: absolute;
     top: 20px;
-    right: calc(-50% + 80px);
-    rotate: -10deg;
+    right: calc(-50% + 70px);
 }
 
 .customer-steps__arrow--second {
-    rotate: -16deg;
-    right: calc(-50% + 12px);
+    rotate: -38deg;
 }
 
 .customer-steps__arrow--third {
     rotate: -10deg;
-    right: calc(-50% + 8px);
-}
-
-.customer-steps__arrow--four {
-    rotate: -10deg;
-    right: calc(-50% - 20px);
 }
 
 .customer-steps__no {
@@ -1872,7 +1868,7 @@ div.customer-steps__box {
     background-color: #fff;
 }
 
-.cooperate-partners__illu img{
+.cooperate-partners__illu img {
     width: 100%;
     height: 100%;
     max-width: 100%;
@@ -2517,9 +2513,9 @@ div.customer-steps__box {
     display: inline;
     line-height: 1em;
     text-align: justify;
-  }
+}
 
-.content-steps{
+.content-steps {
     padding: 20px 40px !important;
     background-color: #fff;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
@@ -2528,10 +2524,11 @@ div.customer-steps__box {
     display: none;
 }
 
-.content-steps.active{
+.content-steps.active {
     display: block;
 }
-.content-steps::before{
+
+.content-steps::before {
     border-bottom: 11px solid #d2efff;
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
@@ -2545,23 +2542,24 @@ div.customer-steps__box {
     right: auto !important;
     left: 7% !important;
 }
-.content-steps:nth-child(1)::before{
+
+.content-steps:nth-child(1)::before {
     left: 10% !important;
 }
+
 .content-steps:nth-child(2)::before {
-    left: 32.5% !important;
+    left: 36.5% !important;
 }
 
 .content-steps:nth-child(3)::before {
-    left: 49% !important;
+    left: 62% !important;
 }
+
 .content-steps:nth-child(4)::before {
-    left: 66% !important;
-}
-.content-steps:nth-child(5)::before {
     left: 87% !important;
 }
-.content-steps p span{
+
+.content-steps p span {
     font-size: 115%;
     color: #0077B5;
 }
